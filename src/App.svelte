@@ -26,8 +26,8 @@
 
       const lastMove = moves[moves.length - 1];
       const amount = (lastMove.end - lastMove.start);
-
       const index = lastMove.start
+      
       paths.splice(index -1, amount +2);
       paths = paths
       moves.splice(moves.length-1, 1)
