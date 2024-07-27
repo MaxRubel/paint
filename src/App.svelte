@@ -68,6 +68,9 @@
   let timeout;
 
   function handleSmootches(){
+    if(timeout){
+      clearTimeout(timeout)
+    }
     catSmootch = true
     timeout = setTimeout(()=>{
       catSmootch = false
